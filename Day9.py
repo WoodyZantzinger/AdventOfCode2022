@@ -16,7 +16,7 @@ spaces = {}
 
 if __name__ == '__main__':
 
-    #Build Data Set
+    #part 2
     with open("data/day9.txt") as inputFile:
         for line in inputFile:
             dir, amount = line.strip().split(" ")
@@ -40,6 +40,5 @@ if __name__ == '__main__':
                     #Mark this space as seen
                     spaces[TAIL_POS] = True
                 #print(str(HEAD_POS) + " -> " + str(TAIL_POS))
-
     #How many squares?
     print(len(spaces))
